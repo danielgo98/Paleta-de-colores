@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 6. Practica</title>
+    <style>
+        .tablerodibujo {
+        border-top-width: thin;
+        border-right-width: thin;
+        border-bottom-width: thin;
+        border-left-width: thin;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        width: auto;
+        }
+
+        .tablerodibujo td {
+            width: 10px;
+            height: 10px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .color1 {
+            background-color: #ff0;
+        }
+
+        .color2 {
+            background-color: #0f0;
+        }
+
+        .color3 {
+            background-color: #000;
+        }
+
+        .color4 {
+            background-color: #f00;
+        }
+
+        .color5 {
+            background-color: #06c;
+        }
+
+        .color6 {
+            background-color: #fff;
+        }
+
+        #paleta td {
+            width: 35px;
+            height: 20px;
+        }
+
+        #pincel {
+            text-align: center;
+        }
+
+        .seleccionado {
+            border: medium solid #939;
+        }
+    </style>
+  </head>
+  <div id="titulo"></div>
+  <body>
+    <p>TABLERO DE DIBUJO EN JAVASCRIPT</p>
+    <table width="500" border="1" id="paleta" summary="Tabla de selección de colores">
+      <caption>Haga CLICK en un color para comenzar a pintar</caption>
+      <tr>
+        <td class="color1 seleccionado"></td>
+        <td class="color2"></td>
+        <td class="color3"></td>
+        <td class="color4"></td>
+        <td class="color5"></td>
+        <td class="color6"></td>
+      </tr>
+      <tr>
+        <td colspan="6" id="pincel">Estado del pincel</td>
+      </tr>
+    </table>
+    <p></p>
+    <div id="zonadibujo"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
